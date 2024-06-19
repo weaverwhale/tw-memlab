@@ -2,10 +2,17 @@
   "scripts": {
     "scenario": "memlab run --scenario memlab_live.js --headless",
     "scenario:headful": "memlab run --scenario memlab_live.js --headful",
-    "unbound": "memlab analyze unbound-collection  --snapshot-dir heaps/h1.snapshot",
-    "global-variable": "memlab analyze global-variable --snapshot heaps/h1.snapshot",
+    "heap": "memlab view-heap --snapshot heaps/h1.heapsnapshot",
+    "unbound": "memlab analyze unbound-collection --snapshot-dir heaps/compare",
+    "global-variable": "memlab analyze global-variable --snapshot heaps/prod.heapsnapshot",
     "unbound-object": "memlab analyze unbound-object --snapshot-dir heaps/compare",
-    "react-hooks": "memlab analyze react-hooks --snapshot-dir heaps/compare"
+    "react-hooks": "memlab analyze react-hooks --snapshot-dir heaps/compare",
+    "react-fiber": "memlab analyze unmounted-fiber-node --snapshot heaps/h1.snapshot",
+    "stale": "memlab analyze collections-with-stale heaps/h1.snapshot",
+    "detatched": "memlab analyze detached-DOM --snapshot heaps/h1.snapshot",
+    "fanout": "memlab analyze object-fanout --snapshot heaps/h1.heapsnapshot",
+    "shape": "memlab analyze unbound-shape --snapshot heaps/h1.snapshot",
+    "string": "memlab analyze string --snapshot heaps/h1.snapshot"
   },
   "dependencies": {
     "memlab": "^1.1.48"

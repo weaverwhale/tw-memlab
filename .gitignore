@@ -6,7 +6,9 @@ node_modules
 *.snapshot
 *.heapsnapshot
 *.heaptimeline
+*.heapprofile
 
 *.snapshot*
 *.heapsnapshot*
 *.heaptimeline*
+*.heapprofile*
