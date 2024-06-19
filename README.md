@@ -6,6 +6,8 @@ Testing for memory leaks with memlab
 
 First, create a heapsnapshot, heapprofile, or heaptimeline file. Then run one of the following commands.
 
+NOTE: There is also a package.json with some test scenarios for you :)
+
 ## Scenario
 
 ```bash

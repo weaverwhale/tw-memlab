@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "scenario": "memlab run --scenario memlab_live.js --headless",
+    "scenario:headful": "memlab run --scenario memlab_live.js --headful",
+    "unbound": "memlab analyze unbound-collection  --snapshot-dir heaps/h1.snapshot",
+    "global-variable": "memlab analyze global-variable --snapshot heaps/h1.snapshot",
+    "unbound-object": "memlab analyze unbound-object --snapshot-dir heaps/compare",
+    "react-hooks": "memlab analyze react-hooks --snapshot-dir heaps/compare"
+  },
+  "dependencies": {
+    "memlab": "^1.1.48"
+  }
+}
