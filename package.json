@@ -2,17 +2,17 @@
   "scripts": {
     "scenario": "memlab run --scenario memlab_live.js --headless",
     "scenario:headful": "memlab run --scenario memlab_live.js --headful",
-    "heap": "memlab view-heap --snapshot heaps/h1.heapsnapshot",
+    "heap": "memlab view-heap --snapshot prod_snap.heapsnapshot",
     "unbound": "memlab analyze unbound-collection --snapshot-dir heaps/compare",
-    "global-variable": "memlab analyze global-variable --snapshot heaps/prod.heapsnapshot",
+    "global-variable": "memlab analyze global-variable --snapshot prod_snap.heapsnapshot",
     "unbound-object": "memlab analyze unbound-object --snapshot-dir heaps/compare",
     "react-hooks": "memlab analyze react-hooks --snapshot-dir heaps/compare",
-    "react-fiber": "memlab analyze unmounted-fiber-node --snapshot heaps/h1.snapshot",
-    "stale": "memlab analyze collections-with-stale heaps/h1.snapshot",
-    "detatched": "memlab analyze detached-DOM --snapshot heaps/h1.snapshot",
-    "fanout": "memlab analyze object-fanout --snapshot heaps/h1.heapsnapshot",
-    "shape": "memlab analyze unbound-shape --snapshot heaps/h1.snapshot",
-    "string": "memlab analyze string --snapshot heaps/h1.snapshot"
+    "react-fiber": "memlab analyze unmounted-fiber-node --snapshot prod_snap.heapsnapshot",
+    "stale": "memlab analyze collections-with-stale prod_snap.heapsnapshot",
+    "detatched": "memlab analyze detached-DOM --snapshot prod_snap.heapsnapshot",
+    "fanout": "memlab analyze object-fanout --snapshot prod_snap.heapsnapshot",
+    "shape": "memlab analyze unbound-shape --snapshot prod_snap.heapsnapshot",
+    "string": "memlab analyze string --snapshot prod_snap.heapsnapshot"
   },
   "dependencies": {
     "memlab": "^1.1.48"
