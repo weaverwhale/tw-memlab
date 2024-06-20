@@ -6,11 +6,9 @@ Testing for memory leaks with memlab
 
 Create a heapsnapshot, heapprofile, or heaptimeline file. Then run one of the following commands.
 
-### Included .gz
+### Included package.json
 
-There is also a gzipped test file, and pre-configured commands in the package.json; this should provide some test scenarios for you ootb.
-
-To extract the gzipped test file, run `gunzip prod_snap.heapsnapshot.gz`
+There are also pre-configured commands in the package.json; this should provide some test scenarios for you ootb.
 
 ## Scenarios
 
